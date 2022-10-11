@@ -86,13 +86,13 @@ public class QueryCreator {
         //insert student name roll number and address in created table
         HashMap<String, String> studentData = new HashMap<>();
         String[] colDataType = {"i","s","i"};
-        studentData.put("student_name","Sanjay");
+        studentData.put("student_name","Ram Oza");
         studentData.put("rollNumber", "1");
         studentData.put("Address","Maitidevi");
         System.out.println(queryInsert("StudentRecord",studentData,colDataType));
-        //update table--> Change name of Sanjay to Sanjaya
+        //update table--> Change name of Ram Oza to Ram Ojhas
         HashMap<String,String> updatedStudentData = new HashMap<>();
-        updatedStudentData.put("student_name", "Sanjaya");
+        updatedStudentData.put("student_name", "Ram Ojhas");
         HashMap<String, String> condition = new HashMap<>();
         condition.put("rollNumber", "1");
         String[] dataTypeRoll = {"i"};
